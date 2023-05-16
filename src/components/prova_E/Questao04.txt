@@ -1,0 +1,7 @@
+O problema de "props drilling" ocorre quando você precisa passar dados através de 
+vários componentes intermediários que não têm necessidade direta desses dados. 
+Isso pode resultar em código confuso, difícil de manter e propenso a erros.
+Para resolver esse problema usamos CONTEXTO, no qual é possível acessar dados
+de outras camadas do código sem a necessidade de passar por todos os níveis 
+intermediários. Para isso deve-se criar um provedor que irá disponibilizar os
+dados, e os consumidores que irão acessar esses dados onde forem necessários.
